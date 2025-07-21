@@ -28,6 +28,8 @@ with col1:
     <div style='font-size:30px; margin-bottom: 20px;'>
         {row['emojis']}</span>
     </div>""", unsafe_allow_html=True)
+            if row['link']:
+                st.write(f"[Web App Link]({row['link']})")
             st.write(f"[Source Code]({row['url']})")
             st.image("images/" + row['image'])
             st.write(" ")
@@ -44,6 +46,8 @@ with col2:
     <div style='font-size:30px; margin-bottom: 20px;'>
         {row['emojis']}</span>
     </div>""", unsafe_allow_html=True)
+            if row['link']:
+                st.write(f"[Web App Link]({row['link']})")
             st.write(f"[Source Code]({row['url']})")
             st.image("images/" + row['image'])
             st.write(" ")
