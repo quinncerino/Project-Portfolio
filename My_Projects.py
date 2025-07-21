@@ -11,7 +11,7 @@ st.markdown(
     f"""<h1 style='
         color: black; 
         font-family: "Julius Sans One", sans-serif;
-        font-size: 90px; 
+        font-size: 95px; 
         text-align: center;
         '>My Projects</h1>""", 
         unsafe_allow_html=True)
