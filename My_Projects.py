@@ -21,7 +21,7 @@ col1, middle, col2 = st.columns([1.5, 0.5, 1.5])
 with col1:
     with open("projects.csv") as file:
         csv_reader = list(DictReader(file, delimiter=";"))
-        for index, row in enumerate(csv_reader[:3]):
+        for index, row in enumerate(csv_reader[:4]):
             st.header(row['title'])
             st.write(row['description'])
             st.markdown(f"""
@@ -39,7 +39,7 @@ with col1:
 with col2:
     with open("projects.csv") as file:
         csv_reader = list(DictReader(file, delimiter=";"))
-        for index, row in enumerate(csv_reader[3:]):
+        for index, row in enumerate(csv_reader[4:]):
             st.header(row['title'])
             st.write(row['description'])
             st.markdown(f"""
